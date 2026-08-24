@@ -85,7 +85,7 @@ For true end-to-end encryption verification:
 4. Use network inspection tools to verify WebSocket payloads are encrypted
 5. Confirm that only the intended recipient can decrypt and display messages
 
-## 📱 Cross-Device Communication
+## Cross-Device Communication
 
 This application is designed to work across different devices and platforms (Windows, macOS, Linux). To communicate between devices:
 
