@@ -1,0 +1,43 @@
+{
+  "name": "encrypted-chat-app",
+  "version": "1.0.0",
+  "description": "End-to-end encrypted chat application using Electron, RSA/AES encryption, and WebSockets",
+  "main": "dist/main.bundle.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm:webpack:watch\" \"npm:start\"",
+    "webpack:watch": "webpack --watch --config webpack.main.config.js && webpack --watch --config webpack.renderer.config.js",
+    "build": "webpack --config webpack.main.config.js && webpack --config webpack.renderer.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "chat",
+    "encryption",
+    "rsa",
+    "aes",
+    "websocket"
+  ],
+  "author": "Encrypted Chat App Developer",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^43.4.1",
+    "electron-store": "^11.0.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "concurrently": "^8.2.0",
+    "css-loader": "^7.1.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
