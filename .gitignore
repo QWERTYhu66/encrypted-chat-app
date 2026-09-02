@@ -19,10 +19,7 @@ out/
 
 # Logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+electron.log
 
 # Debug files
 *.debug
@@ -43,7 +40,7 @@ pnpm-debug.log*
 ehthumbs.db
 Thumbs.db
 
-# Electrion
+# Electron
 electron-builder.yml
 
 # Misc
@@ -61,6 +58,3 @@ coverage/
 # Backup files
 *.bak
 *.backup
-
-# TypeScript
-*.tsbuildinfo
